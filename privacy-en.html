@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — DasiKoK (다시콕)</title>
+<meta name="description" content="Privacy Policy for DasiKoK (다시콕) — purpose of the Accessibility permission, what data is collected and stored, and how the Google Mobile Ads SDK processes data.">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5f5f5f;
+    --link: #1a56db;
+    --border: #e0e0e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #eaeaea;
+      --muted: #a0a0a0;
+      --link: #7aa6ff;
+      --border: #2c2f36;
+    }
+  }
+  html, body {
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+  .lang-switch {
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+  }
+  .lang-switch a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  .lang-switch a:hover {
+    text-decoration: underline;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 36px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  p {
+    margin: 0 0 12px;
+  }
+  ul {
+    margin: 0 0 12px;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    color: var(--link);
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2026-08-31</p>
+
+  <p class="lang-switch">🌐 <a href="./index.html">한국어로 보기</a></p>
+
+  <h2>1. Purpose of the Accessibility permission</h2>
+  <p>DasiKoK uses the Accessibility permission (AccessibilityService) so that recommendation videos you've already seen on YouTube's home feed can still be found after the feed refreshes and they disappear. This permission is scoped to work only on the YouTube app's (com.google.android.youtube) home recommendation feed screen — it never reads the screen content of any other app.</p>
+
+  <h2>2. Information read</h2>
+  <p>DasiKoK reads only the title, channel name, duration, view count, and publish time of recommendation videos that are already displayed on the YouTube home recommendation feed screen. It does not record or capture the screen, and it never collects unrelated input such as passwords, messages, or search queries. The raw screen structure (accessibility tree) delivered by the Accessibility permission exists in memory only while this information is being extracted, and is discarded immediately afterward — the raw structure itself is never stored.</p>
+
+  <h2>3. Where data is stored</h2>
+  <p>The recommendation history above is stored only on this device (local storage, a Room database). DasiKoK's own code never transmits this history to a server or any other backend — there is no networking functionality in DasiKoK's own code for this purpose. It is also configured to be excluded from the device's automatic backup.</p>
+
+  <h2>4. Deletion</h2>
+  <p>Tapping "Delete all history" in Settings immediately deletes all stored recommendation history. Uninstalling the app deletes all history stored on the device as well. Older history is also cleared automatically to keep storage bounded.</p>
+
+  <h2>5. Google Mobile Ads SDK (advertising)</h2>
+  <p>Viewing a saved recommendation history requires watching one short rewarded ad. This ad is served by the Google Mobile Ads SDK. Unlike DasiKoK's own recommendation history (sections 1–4 above), this SDK communicates directly with Google to display ads and may process the following on its own:</p>
+  <ul>
+    <li>IP address (used to estimate the device's approximate location)</li>
+    <li>Ad-related interactions (ad impressions, taps, etc.)</li>
+    <li>Diagnostic information (app runtime and other SDK/ad performance metrics)</li>
+    <li>Device and account identifiers (such as the advertising ID — you can reset or delete this from your device's "Settings &gt; Privacy")</li>
+  </ul>
+  <p>This information is encrypted in transit (TLS). DasiKoK currently uses only Google's official test ads — a production ad unit has not yet been connected.</p>
+
+  <h2>6. Third-party service providers</h2>
+  <p>DasiKoK uses the Google Mobile Ads SDK (Google LLC) to display ads. It does not integrate with any other third-party service directly — no separate analytics or crash-reporting SDK is used.</p>
+
+  <h2>7. Data retention and deletion</h2>
+  <p>DasiKoK's own recommendation history: see section 4 (Deletion) above — deleted by the user directly, or cleared automatically once storage limits are reached. Information processed by the ad SDK: Google retains and deletes this according to its own policies; DasiKoK does not directly store this information itself.</p>
+
+  <h2>8. Contact</h2>
+  <p>If you have any questions about this Privacy Policy or about using DasiKoK, please contact us at the email address below.</p>
+  <p>Email: <a href="mailto:rednathfel@nate.com">rednathfel@nate.com</a></p>
+
+  <footer>
+    <p>DasiKoK (다시콕) · Developer: DasiKoK</p>
+  </footer>
+</main>
+</body>
+</html>
