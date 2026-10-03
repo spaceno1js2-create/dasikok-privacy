@@ -91,7 +91,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 2026-08-31</p>
+  <p class="updated">Last updated: 2026-10-03</p>
 
   <p class="lang-switch">🌐 <a href="./index.html">한국어로 보기</a></p>
 
@@ -108,14 +108,15 @@
   <p>Tapping "Delete all history" in Settings immediately deletes all stored recommendation history. Uninstalling the app deletes all history stored on the device as well. Older history is also cleared automatically to keep storage bounded.</p>
 
   <h2>5. Google Mobile Ads SDK (advertising)</h2>
-  <p>Viewing a saved recommendation history requires watching one short rewarded ad. This ad is served by the Google Mobile Ads SDK. Unlike DasiKoK's own recommendation history (sections 1–4 above), this SDK communicates directly with Google to display ads and may process the following on its own:</p>
+  <p>Viewing a saved recommendation history requires watching one short rewarded ad. This ad is served by the Google Mobile Ads SDK (Google AdMob), and the current release uses a live (production) AdMob ad unit, so real ads are shown.</p>
+  <p>The recommendation history that DasiKoK reads through the Accessibility service and stores on this device (sections 1–4 above) is not passed to the ad SDK and is not used for ad targeting or user profiling. The SDK, however, communicates directly with Google to request and display ads and may process the following on its own, separately from DasiKoK:</p>
   <ul>
     <li>IP address (used to estimate the device's approximate location)</li>
     <li>Ad-related interactions (ad impressions, taps, etc.)</li>
     <li>Diagnostic information (app runtime and other SDK/ad performance metrics)</li>
     <li>Device and account identifiers (such as the advertising ID — you can reset or delete this from your device's "Settings &gt; Privacy")</li>
   </ul>
-  <p>This information is encrypted in transit (TLS). DasiKoK currently uses only Google's official test ads — a production ad unit has not yet been connected.</p>
+  <p>This information is encrypted in transit (TLS). Google may use it to serve ads, measure ad performance, prevent abuse, and manage SDK performance, in accordance with Google's privacy policy and AdMob policies.</p>
 
   <h2>6. Third-party service providers</h2>
   <p>DasiKoK uses the Google Mobile Ads SDK (Google LLC) to display ads. It does not integrate with any other third-party service directly — no separate analytics or crash-reporting SDK is used.</p>
